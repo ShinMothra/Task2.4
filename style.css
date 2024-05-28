@@ -1,80 +1,49 @@
-body {
-    background-color:rgb(78, 201, 16);  
-    }
-  
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+.form-body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fbfcb1;
+  margin: 0;
+  padding: 0;
+}
+.form-container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-label {
+  font-weight: bold;
+  resize: vertical;
+}
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.form-radio,
+.form-checkbox {
+  margin-right: 10px;
+}
+.form-button {
+  padding: 10px 20px;
+  background-color: #04c237;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-button:hover {
+  background-color: #45a049;
+}
 
-    .error {
-      color:#ff4141;
-      font-size:15px;
-      margin-top: 10px;
-      margin-bottom:10px;
-    }
-       
-    .form_item{
-        margin: 0px 0px 10px 0px;
-      }
-      .form_input{
-        height:50px;
-        border-radius:5px;
-        width:100%;
-        font-size:12px;
-        
-      }
-      .form_input2{
-        border-radius:5px;
-        width:100%;
-        font-size:12px;
-        height:150px;
-        
-      }
-      .form_input3{
-        height:auto;
-        border-radius:5px;
-        width:100%;
-
-        
-      }
-      .checkbox_label{
-        font-size:12px;
-      }
-     .form-popup div input {
-        border: 1px solid #1906f2;
-    }
-    .form-popup div select {
-        border: 1px solid #1906f2;
-       
-    }
-    .form-popup div textarea {
-        border: 1px solid #1906f2;
-    }
-      .form_input2.error{
-        box-shadow:0 0 15px #ff0000;
-      }
-      .form_input.error{
-        box-shadow:0 0 15px #ff0000;
-      }
-      .form_input3.error{
-        box-shadow:0 0 15px #ff0000;
-      }
-      textarea.form_input{
-        min-height:100px;
-      }
-      .checkbox_input{
-        height:25px;
-        width:25px;
-      }
-     
-      .form_button{
-        margin-top: 20px;
-        margin-bottom:40px;
-        display: inline-block;
-        width: 100%;
-        background: transparent;
-        padding: 8px;
-        color:#1906f2;
-        border: 1px solid #1906f2;
-        border-radius: 5px;
-        text-align: center;
-        outline: none;
-        text-decoration: none;
-      }
+.input-control {
+  display: flex;
+  flex-direction: column;
+}
