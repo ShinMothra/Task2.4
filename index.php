@@ -1,5 +1,5 @@
 <?php
-include 'form.php';
+include 'formhandler.php';
 $fullname_cookie = isset($_COOKIE['fullname']) ? $_COOKIE['fullname'] : '';
 $phone_cookie = isset($_COOKIE['phone']) ? $_COOKIE['phone'] : '';
 $email_cookie = isset($_COOKIE['email']) ? $_COOKIE['email'] : '';
@@ -25,7 +25,7 @@ $errors = isset($_COOKIE['errors']) ? json_decode($_COOKIE['errors'], true) : []
 <body class="form-body">
     <div class="form-container">
         <h2>Форма</h2>
-        <form method="POST" id="myForm" action="form.php">
+        <form method="POST" id="myForm" action="formhandler.php">
             <div class="form-group input-control">
                 <label for="fullname" class="form-label">ФИО:</label>
                 <input type="text" id="fullname" name="fullname" class="form-input"
