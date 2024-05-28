@@ -25,7 +25,7 @@ $errors = isset($_COOKIE['errors']) ? json_decode($_COOKIE['errors'], true) : []
 <body class="form-body">
     <div class="form-container">
         <h2>Форма</h2>
-        <form method="POST" id="myForm" action="formhandler.php">
+        <form method="POST" id="myForm" action="form.php">
             <div class="form-group input-control">
                 <label for="fullname" class="form-label">ФИО:</label>
                 <input type="text" id="fullname" name="fullname" class="form-input"
