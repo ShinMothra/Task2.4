@@ -61,6 +61,10 @@ $errors = isset($_COOKIE['errors']) ? json_decode($_COOKIE['errors'], true) : []
                     for="male">Мужской</label>
                 <input type="radio" id="female" name="gender" <?php echo $radio2;?> value="female" class="form-radio"
                     <label for="female">Женский</label>
+                <input type="radio" id="other" name="gender" <?php echo $radio1;?> value="other" class="form-radio" <label
+                    for="male">Неопределённый</label>
+                <input type="radio" id="business" name="gender" <?php echo $radio1;?> value="business" class="form-radio" <label
+                    for="male">Бизнес</label>
                 <?php echo isset($errors['gender']) ? $errors['gender'] : ''; ?>
             </div>
             <div class="form-group input-control">
@@ -78,14 +82,6 @@ $errors = isset($_COOKIE['errors']) ? json_decode($_COOKIE['errors'], true) : []
                     <option value="Python" <?php echo in_array('Python', $languages_cookie) ? 'selected' : ''; ?>>Python
                     </option>
                     <option value="Java" <?php echo in_array('Java', $languages_cookie) ? 'selected' : ''; ?>>Java
-                    </option>
-                    <option value="Haskell" <?php echo in_array('Haskell', $languages_cookie) ? 'selected' : ''; ?>>
-                        Haskell</option>
-                    <option value="Clojure" <?php echo in_array('Clojure', $languages_cookie) ? 'selected' : ''; ?>>
-                        Clojure</option>
-                    <option value="Prolog" <?php echo in_array('Prolog', $languages_cookie) ? 'selected' : ''; ?>>Prolog
-                    </option>
-                    <option value="Scala" <?php echo in_array('Scala', $languages_cookie) ? 'selected' : ''; ?>>Scala
                     </option>
                 </select>
                 <?php echo isset($errors['languages']) ? $errors['languages'] : ''; ?>
